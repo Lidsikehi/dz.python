@@ -1,0 +1,8 @@
+# Реализуйте алгоритм перемешивания списка. Без функции shuffle из модуля random.
+import random
+list = [0,1,2,3,4,5,6,7,8,9]
+print ("Начальный список: " + str(list))
+for i in range(len(list)-1, 0, -1):
+    a = random.randint(0, i + 1) 
+    list[i], list[a] = list[a], list[i] 
+print ("Конечный список: " +  str(list))
